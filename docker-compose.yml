@@ -12,9 +12,9 @@ services:
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
 
-  pgadmin3:
+  pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin4_container
+    container_name: pgadmin4_containerbd
     restart: always
     ports:
       - "8890:80"
